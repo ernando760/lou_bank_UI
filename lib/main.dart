@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lou_bank/src/modules/auth/login/login_page.dart';
+import 'package:lou_bank/src/modules/auth/login/login_in_page.dart';
 import 'package:lou_bank_core/lou_bank_core.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class LouBankAppMain extends StatelessWidget {
       initialRoute: "/login",
       theme: ThemeMainLouBank.theme,
       routes: {
-        "/login": (context) => const LoginPage(),
+        "/login": (context) => const LoginInPage(),
       },
     );
   }
