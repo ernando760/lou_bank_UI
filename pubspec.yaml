@@ -38,6 +38,7 @@ dependencies:
 
   lou_bank_core:
     path: ../lou_bank_core
+  flutter_svg: ^2.0.9
 dev_dependencies:
   flutter_test:
     sdk: flutter
