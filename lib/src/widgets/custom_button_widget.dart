@@ -17,7 +17,7 @@ class CustomButtonWidget extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(13),
             decoration: BoxDecoration(
-              color: isBlack ? ColorsLouBank.gray1 : null,
+              color: isBlack ? const Color(0xFF363339) : null,
               borderRadius: BorderRadius.circular(38),
               gradient: !isBlack
                   ? const LinearGradient(
