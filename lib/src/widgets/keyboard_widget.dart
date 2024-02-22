@@ -28,9 +28,11 @@ class KeyboardWidget extends StatelessWidget {
           const KeyBoardButton(number: "9", letter: "W X Y Z"),
           Container(),
           const KeyBoardButton(number: "0"),
-          IconButton(
-              onPressed: () {},
-              icon: SvgPicture.asset("assets/images/back.svg")),
+          LouBankCustomIconButton(
+            icon: SvgPicture.asset("assets/images/back.svg"),
+            onPressed: () {},
+            style: IconButton.styleFrom(backgroundColor: Colors.transparent),
+          )
         ],
       ),
     );
@@ -49,35 +51,31 @@ class KeyBoardButton extends StatefulWidget {
 class _KeyBoardButtonState extends State<KeyBoardButton> {
   @override
   Widget build(BuildContext context) {
-    return Material(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-      child: InkWell(
-        child: Container(
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-              color: const Color(0xFF363339),
-              borderRadius: BorderRadius.circular(50)),
-          width: 65,
-          height: 65,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text(
-                widget.number,
-                style: TextStyleLouBank.headline21Regular
-                    .copyWith(fontSize: 30, color: Colors.white),
-              ),
-              widget.letter != null
-                  ? Text(
-                      widget.letter!,
-                      style: TextStyleLouBank.body16Regular
-                          .copyWith(fontSize: 12, color: Colors.white),
-                    )
-                  : Container(),
-            ],
+    return RawMaterialButton(
+      elevation: 0,
+      onPressed: () {},
+      fillColor: const Color(0xFF363339),
+      shape: const OvalBorder(),
+      constraints: const BoxConstraints(
+          maxHeight: 75, maxWidth: 75, minWidth: 35, minHeight: 35),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisSize: MainAxisSize.max,
+        children: [
+          Text(
+            widget.number,
+            style: TextStyleLouBank.headline21Regular
+                .copyWith(fontSize: 30, color: Colors.white),
           ),
-        ),
+          widget.letter != null
+              ? Text(
+                  widget.letter!,
+                  style: TextStyleLouBank.body16Regular
+                      .copyWith(fontSize: 10, color: Colors.white),
+                )
+              : Container(),
+        ],
       ),
     );
   }
