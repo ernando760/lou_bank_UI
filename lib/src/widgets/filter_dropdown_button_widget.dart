@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lou_bank_core/lou_bank_core.dart';
 
-class CustomDropDownButton extends StatelessWidget {
-  const CustomDropDownButton({super.key});
+class FilterDropdownButtonWidget extends StatelessWidget {
+  const FilterDropdownButtonWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,15 +26,7 @@ class CustomDropDownButton extends StatelessWidget {
                 .copyWith(color: Colors.white)),
         style: TextStyleLouBank.caption14Regular.copyWith(color: Colors.white),
         elevation: 0,
-        items: const [
-          DropdownMenuItem(
-            value: 0,
-            child: ColoredBox(
-                color: Colors.red,
-                child: Padding(
-                    padding: EdgeInsets.only(right: 6), child: Text("teste"))),
-          )
-        ],
+        items: const [],
         onChanged: (value) {},
       ),
     );

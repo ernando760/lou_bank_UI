@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:lou_bank/src/widgets/custom_drop_down_button.dart';
+import 'package:lou_bank/src/widgets/filter_dropdown_button_widget.dart';
 import 'package:lou_bank_core/lou_bank_core.dart';
 
 class ActionSheetMyCardWidget extends StatelessWidget {
@@ -30,7 +30,7 @@ class ActionSheetMyCardWidget extends StatelessWidget {
                 style: TextStyleLouBank.headline21Regular
                     .copyWith(color: Colors.white),
               ),
-              const CustomDropDownButton(),
+              const FilterDropdownButtonWidget(),
             ],
           ),
           const SizedBox(
