@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lou_bank/src/modules/auth/login/login_in_page.dart';
 import 'package:lou_bank/src/modules/auth/passcode/pass_code_page.dart';
 import 'package:lou_bank/src/modules/home/home_page.dart';
+import 'package:lou_bank/src/modules/home/pages/my_budget_page.dart';
 import 'package:lou_bank/src/modules/home/pages/my_card_page.dart';
 import 'package:lou_bank/src/modules/splash/splash_page.dart';
 import 'package:lou_bank_core/lou_bank_core.dart';
@@ -24,7 +25,8 @@ class LouBankAppMain extends StatelessWidget {
         "/login": (context) => const LoginInPage(),
         "/pass-code": (context) => const PassCodePage(),
         "/home": (context) => const HomePage(),
-        "/my-card": (context) => const MyCardPage()
+        "/my-card": (context) => const MyCardPage(),
+        "/my-budget": (context) => const MyBudgetPage()
       },
     );
   }
