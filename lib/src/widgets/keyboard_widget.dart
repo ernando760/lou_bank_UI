@@ -29,7 +29,8 @@ class KeyboardWidget extends StatelessWidget {
           Container(),
           const KeyBoardButton(number: "0"),
           LouBankCustomIconButton(
-            icon: SvgPicture.asset("assets/images/back.svg"),
+            icon:
+                SvgPicture.asset("assets/images/arrow_icons/keyboard_back.svg"),
             onPressed: () {},
             style: IconButton.styleFrom(backgroundColor: Colors.transparent),
           )

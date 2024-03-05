@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
           children: [
             LouBankAppBar(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-              title: SvgPicture.asset('assets/images/logo_1.svg'),
+              title: SvgPicture.asset('assets/images/logos/logo_small.svg'),
               leading: const CircleAvatar(
                 radius: 16,
                 backgroundImage: AssetImage("assets/images/avatar.jpg"),
@@ -44,37 +44,42 @@ class HomePage extends StatelessWidget {
       ),
       louBankBottomNavigationBar: LouBankNavigationBar(navigationBarButtons: [
         LouBankNavigationBarItem(
-            icon: SvgPicture.asset("assets/images/home.svg"),
+            icon:
+                SvgPicture.asset("assets/images/navigation_bar_icons/home.svg"),
             activeIcon: SvgPicture.asset(
-              "assets/images/home.svg",
+              "assets/images/navigation_bar_icons/home.svg",
               colorFilter:
                   const ColorFilter.mode(ColorsLouBank.yellow, BlendMode.srcIn),
             )),
         LouBankNavigationBarItem(
-            icon: SvgPicture.asset("assets/images/shop.svg"),
+            icon:
+                SvgPicture.asset("assets/images/navigation_bar_icons/shop.svg"),
             activeIcon: SvgPicture.asset(
-              "assets/images/shop.svg",
+              "assets/images/navigation_bar_icons/shop.svg",
               colorFilter:
                   const ColorFilter.mode(ColorsLouBank.yellow, BlendMode.srcIn),
             )),
         LouBankNavigationBarItem(
-            icon: SvgPicture.asset("assets/images/card.svg"),
+            icon:
+                SvgPicture.asset("assets/images/navigation_bar_icons/card.svg"),
             activeIcon: SvgPicture.asset(
-              "assets/images/card.svg",
+              "assets/images/navigation_bar_icons/card.svg",
               colorFilter:
                   const ColorFilter.mode(ColorsLouBank.yellow, BlendMode.srcIn),
             )),
         LouBankNavigationBarItem(
-            icon: SvgPicture.asset("assets/images/chat.svg"),
+            icon:
+                SvgPicture.asset("assets/images/navigation_bar_icons/chat.svg"),
             activeIcon: SvgPicture.asset(
-              "assets/images/chat.svg",
+              "assets/images/navigation_bar_icons/chat.svg",
               colorFilter:
                   const ColorFilter.mode(ColorsLouBank.yellow, BlendMode.srcIn),
             )),
         LouBankNavigationBarItem(
-            icon: SvgPicture.asset("assets/images/history.svg"),
+            icon: SvgPicture.asset(
+                "assets/images/navigation_bar_icons/history.svg"),
             activeIcon: SvgPicture.asset(
-              "assets/images/history.svg",
+              "assets/images/navigation_bar_icons/history.svg",
               colorFilter:
                   const ColorFilter.mode(ColorsLouBank.yellow, BlendMode.srcIn),
             )),

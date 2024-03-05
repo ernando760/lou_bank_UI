@@ -73,7 +73,7 @@ class ActionSheetHomePageWidget extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12)),
                       child: LouBankCustomIcon(
                           icon: SvgPicture.asset(
-                        "assets/images/creditcard_face.svg",
+                        "assets/images/credit_cards/credit_card_face.svg",
                       )),
                     ),
                     const SizedBox(

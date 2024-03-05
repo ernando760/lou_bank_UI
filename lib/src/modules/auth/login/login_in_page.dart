@@ -17,7 +17,7 @@ class LoginInPage extends StatelessWidget {
             LouBankAppBar(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
-                title: SvgPicture.asset('assets/images/logo_1.svg'),
+                title: SvgPicture.asset('assets/images/logos/logo_small.svg'),
                 traling: LouBankCustomIconButton(
                     icon: const Icon(
                       Icons.more_vert_outlined,
@@ -33,7 +33,7 @@ class LoginInPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     SvgPicture.asset(
-                      "assets/images/logo_2.svg",
+                      "assets/images/logos/logo_medium.svg",
                     ),
                     const SizedBox(
                       height: 84,

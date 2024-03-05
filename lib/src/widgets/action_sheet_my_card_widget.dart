@@ -55,7 +55,7 @@ class ActionSheetMyCardWidget extends StatelessWidget {
                     decoration: const BoxDecoration(
                         color: ColorsLouBank.yellow, shape: BoxShape.circle),
                     child: SvgPicture.asset(
-                      "assets/images/arrow_down.svg",
+                      "assets/images/arrow_icons/arrow_down.svg",
                     ),
                   ),
                   const SizedBox(
@@ -95,7 +95,7 @@ class ActionSheetMyCardWidget extends StatelessWidget {
                     decoration: const BoxDecoration(
                         color: ColorsLouBank.mint, shape: BoxShape.circle),
                     child: SvgPicture.asset(
-                      "assets/images/arrow_up.svg",
+                      "assets/images/arrow_icons/arrow_up.svg",
                     ),
                   ),
                   const SizedBox(
@@ -143,7 +143,7 @@ class ActionSheetMyCardWidget extends StatelessWidget {
                     decoration: const BoxDecoration(
                         color: ColorsLouBank.yellow, shape: BoxShape.circle),
                     child: SvgPicture.asset(
-                      "assets/images/arrow_down.svg",
+                      "assets/images/arrow_icons/arrow_down.svg",
                     ),
                   ),
                   const SizedBox(
@@ -183,7 +183,7 @@ class ActionSheetMyCardWidget extends StatelessWidget {
                     decoration: const BoxDecoration(
                         color: ColorsLouBank.mint, shape: BoxShape.circle),
                     child: SvgPicture.asset(
-                      "assets/images/arrow_up.svg",
+                      "assets/images/arrow_icons/arrow_up.svg",
                     ),
                   ),
                   const SizedBox(
