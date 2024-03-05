@@ -23,27 +23,42 @@ class FinanceWidget extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
-                CardSmallWidget(
-                  icon: SvgPicture.asset("assets/images/cards/icons/star.svg"),
-                  label: "My Bonuses",
-                  color: ColorsLouBank.yellow,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).pushReplacementNamed("/my-budget");
+                  },
+                  child: CardSmallWidget(
+                    icon:
+                        SvgPicture.asset("assets/images/cards/icons/star.svg"),
+                    label: "My Bonuses",
+                    color: ColorsLouBank.yellow,
+                  ),
                 ),
                 const SizedBox(
                   width: 14,
                 ),
-                CardSmallWidget(
-                  icon:
-                      SvgPicture.asset("assets/images/cards/icons/wallet.svg"),
-                  label: "My budget",
-                  color: ColorsLouBank.mint,
+                GestureDetector(
+                  onTap: () =>
+                      Navigator.of(context).pushReplacementNamed("/my-budget"),
+                  child: CardSmallWidget(
+                    icon: SvgPicture.asset(
+                        "assets/images/cards/icons/wallet.svg"),
+                    label: "My budget",
+                    color: ColorsLouBank.mint,
+                  ),
                 ),
                 const SizedBox(
                   width: 14,
                 ),
-                CardSmallWidget(
-                  icon: SvgPicture.asset("assets/images/cards/icons/chart.svg"),
-                  label: "Finance analysis",
-                  color: ColorsLouBank.lilcac,
+                GestureDetector(
+                  onTap: () =>
+                      Navigator.of(context).pushReplacementNamed("/my-budget"),
+                  child: CardSmallWidget(
+                    icon:
+                        SvgPicture.asset("assets/images/cards/icons/chart.svg"),
+                    label: "Finance analysis",
+                    color: ColorsLouBank.lilcac,
+                  ),
                 ),
                 const SizedBox(
                   width: 14,
