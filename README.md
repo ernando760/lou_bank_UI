@@ -1,16 +1,17 @@
-# lou_bank
+# LOUBANK
 
-A new Flutter project.
+<p>Um projeto LOUBANK UI feito flutter, este projeto usa um pacote 
+<a href="https://github.com/ernando760/lou_bank_core"><b>lou_bank_core</b></a>.
+<p> 
 
-## Getting Started
+<p float="left">
+<img src="assets/md/lou_bank_img.jpg" with="100" height="500" />
+<img src="assets/md/pass-code.gif" with="100" height="500"/>
+<img src="assets/md/home.gif" with="100" height="500"/>
+</p>
 
-This project is a starting point for a Flutter application.
+<p float="left">
+<img src="assets/md/my-cards.gif" with="100" height="500"/>
+<img src="assets/md/my-budget.gif" with="100" height="500"/>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
